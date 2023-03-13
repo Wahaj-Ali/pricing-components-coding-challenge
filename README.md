@@ -62,7 +62,7 @@ Clone this [repository](https://github.com/Wahaj-Ali/Enumerable.git) to your des
 ```
 ### Usage
 
-To run the project in a development server you need to install liver server extension in VScode.
+To run the project in a development server you need to install live server extension in VScode.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
