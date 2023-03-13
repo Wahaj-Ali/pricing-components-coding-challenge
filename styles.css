@@ -194,4 +194,15 @@ footer p {
   .container:nth-child(even) button {
     justify-content: center;
   }
+
+  .container button:hover {
+    background-color: white;
+    background-image: none;
+    border: 1px solid black;
+    color: var(--secondary);
+  }
+  .container:nth-child(even) button:hover {
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+  }
 }
