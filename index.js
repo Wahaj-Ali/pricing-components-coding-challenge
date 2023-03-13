@@ -3,7 +3,7 @@ const basicPrice = document.querySelector('#basic-price');
 const proPrice = document.querySelector('#pro-price');
 const masterPrice = document.querySelector('#master-price')
 
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function () {
   if (toggleButton.checked) {
     basicPrice.textContent = '19.99'; // Change the text to the new price
     proPrice.textContent = '24.99';
