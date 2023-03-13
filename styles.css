@@ -57,7 +57,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -75,11 +75,11 @@ body {
 }
 
 input:checked+.slider {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px var(--primary);
+  box-shadow: 0 0 1px var(--secondary);
 }
 
 input:checked+.slider:before {
@@ -90,6 +90,10 @@ input:checked+.slider:before {
 
 .slider.round {
   border-radius: 34px;
+}
+
+.slider.round:hover {
+  background-color: var(--primary);
 }
 
 .slider.round:before {
@@ -193,5 +197,17 @@ footer p {
 
   .container:nth-child(even) button {
     justify-content: center;
+  }
+
+  .container button:hover {
+    background-color: white;
+    background-image: none;
+    border: 1px solid black;
+    color: var(--secondary);
+  }
+
+  .container:nth-child(even) button:hover {
+    background-color: hsl(237, 63%, 64%);
+    color: white;
   }
 }
