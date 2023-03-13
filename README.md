@@ -12,9 +12,9 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started with database ](#-getting-started-with-database-)
+  - [💻 Getting Started](#-getting-started)
     - [Setup](#setup)
-  - [Usage](#usage)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -49,7 +49,7 @@ I completed the coding challenge named "Pricing component with toggle" from [Fro
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💻 Getting Started with database <a name="getting-started"></a>
+## 💻 Getting Started<a name="getting-started"></a>
 
 ### Setup
 
@@ -60,7 +60,7 @@ Clone this [repository](https://github.com/Wahaj-Ali/Enumerable.git) to your des
   git clone https://github.com/Wahaj-Ali/pricing-components-coding-challenge.git
   cd pricing-components-coding-challenge
 ```
-## Usage
+### Usage
 
 To run the project in a development server you need to install liver server extension in VScode.
 
