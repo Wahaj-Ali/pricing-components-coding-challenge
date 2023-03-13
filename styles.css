@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  --primary: hsl(236, 72%, 79%);
+  --secondary: hsl(237, 63%, 64%);
+  --light_grey: hsl(240, 78%, 98%);
+  --light_grey_blue: hsl(234, 14%, 74%);
+  --dark_grey: hsl(232, 13%, 33%);
+  --greyish_blue: hsl(233, 13%, 49%);
+  font-family: 'Montserrat', sans-serif;
+  ;
+}
+
 body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-image: url(./images/bg-top.svg);
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: 200px -36px;
+  background-color: hsl(240deg 53% 96%);
 }
 
 #pricing-title {
   align-self: center;
+  color: var(--greyish_blue);
 }
 
 .price-slider {
@@ -14,8 +33,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  color: var(--greyish_blue);
+  margin: 25px;
 }
-
 
 .switch {
   position: relative;
@@ -37,7 +57,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsl(228, 45%, 44%);
+  background-color: var(--primary);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -55,11 +75,11 @@ body {
 }
 
 input:checked+.slider {
-  background-color: hsl(228, 45%, 44%);
+  background-color: var(--primary);
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px hsl(228, 45%, 44%);
+  box-shadow: 0 0 1px var(--primary);
 }
 
 input:checked+.slider:before {
@@ -76,24 +96,102 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+.packages {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   align-self: center;
-  background-color: #6765c2;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   width: 85%;
   border-radius: 15px;
+  margin: 0 0 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container:nth-child(odd) {
+  background-color: #fff;
+  background-image: none;
+}
+
+.container:nth-child(odd) h2,
+.container:nth-child(odd) h3,
+.container:nth-child(odd) p {
+  color: var(--dark_grey);
+}
+
+.container:nth-child(odd) button {
+  background-image: linear-gradient(156deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+
 }
 
 .container h2,
-h3,
-p {
+.container h3,
+.container p {
   display: flex;
   justify-content: center;
+  color: #fff;
+}
+
+.container h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.container h2 span {
+  font-size: 35px;
+  align-self: center;
 }
 
 .container button {
-  width: 95%;
-  margin: 10px;
-  height: 35px;
+  width: 280px;
+  margin: 25px 0;
+  height: 45px;
   border-radius: 10px;
   border: none;
+  font-size: 15px;
+  color: var(--secondary);
+  background-color: #fff;
+  font-weight: 700;
+  align-self: center;
+}
+
+.solid {
+  margin: 5px 25px;
+  border-color: var(--light_grey);
+}
+
+footer {
+  align-self: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-position: right top, left bottom;
+  }
+
+  .packages {
+    flex-direction: row;
+    margin: 70px 150px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .container:nth-child(even) {
+    padding: 25px 0;
+  }
+
+  .container:nth-child(even) button {
+    justify-content: center;
+  }
 }
